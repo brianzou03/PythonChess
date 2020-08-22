@@ -476,7 +476,7 @@ class Game(object):
                     Player.dullmoves += 1
                 player.domove(self.board, start, target)
                 player.playedturns += 1
-                # Check if there is a Pawn up for promotion
+                #check if there is a pawn ready for a promotion
                 if self.board[target].piecename is 'p':
                     if self.board[target].canbepromoted():
                         player.pawnpromotion(self.board, target)
